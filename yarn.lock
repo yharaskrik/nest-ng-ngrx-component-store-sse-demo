@@ -1642,6 +1642,20 @@
     optional "0.1.4"
     tslib "2.3.1"
 
+"@ngrx/component-store@^13.0.2":
+  version "13.0.2"
+  resolved "https://registry.yarnpkg.com/@ngrx/component-store/-/component-store-13.0.2.tgz#fd254a2000851a213ee3c0ba76164055c370939e"
+  integrity sha512-zAqXuO2FT3gBJp9TWc0O8Lo4h62xbXmUxBYYTT2/BNczK+XNf/pzDWrYEtsgwP4Php0AgoY38Ht0ZS6sJkgpMQ==
+  dependencies:
+    tslib "^2.0.0"
+
+"@ngrx/component@^13.0.2":
+  version "13.0.2"
+  resolved "https://registry.yarnpkg.com/@ngrx/component/-/component-13.0.2.tgz#7555e126061f054a1654134cd5223b61e52130f2"
+  integrity sha512-Izq984Soqt/ze/XyNLTvFjdMkuGLwarfe0hT9qjVO8cHgI5hEAvjwklv+JHmM1dtJOZ+USoM0rgwaUU5iInQfA==
+  dependencies:
+    tslib "^2.0.0"
+
 "@ngtools/webpack@13.2.2":
   version "13.2.2"
   resolved "https://registry.yarnpkg.com/@ngtools/webpack/-/webpack-13.2.2.tgz#b0e3b6441432dc899c42e0ada1a95c72898bc3bc"

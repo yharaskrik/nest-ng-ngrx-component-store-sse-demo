@@ -1,15 +1,17 @@
-import { Controller, Get } from '@nestjs/common';
-
-import { Message } from '@nest-ng-ngrx-component-store-sse-demo/api-interfaces';
-
-import { AppService } from './app.service';
+import { Controller, Sse } from '@nestjs/common';
+import { interval, map } from 'rxjs';
 
 @Controller()
 export class AppController {
-  constructor(private readonly appService: AppService) {}
-
-  @Get('hello')
-  getData(): Message {
-    return this.appService.getData();
+  /*
+   * A simple Sse endpoint to emit the current time.
+   */
+  @Sse('time')
+  getData() {
+    /*
+     * This can be any observable, you could swap it out for a WebSocket connection to your favorite API
+     * or some other Observable that emits data from any source you choose.
+     */
+    return interval(1000).pipe(map(() => ({ data: { now: new Date() } })));
   }
 }
