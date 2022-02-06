@@ -5,19 +5,19 @@ to the server. A NgRx ComponentStore sets up a connection that updates the store
 
 Stack: 
 
-Angular
-Server-Sent Events
-Nestjs
-NgRx ComponentStore
+1. Angular
+2. Server-Sent Events
+3. Nestjs
+4. NgRx ComponentStore
 
 References:
-https://docs.nestjs.com/techniques/server-sent-events
-https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events
-https://ngrx.io/guide/component-store/effect
+1. https://docs.nestjs.com/techniques/server-sent-events
+2. https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events
+3. https://ngrx.io/guide/component-store/effect
 
 To run:
-Install deps: `yarn`
-Run server: `yarn nx serve api`
-Run client: `yarn nx serve client`
+1. Install deps: `yarn`
+2. Run server: `yarn nx serve api`
+3. Run client: `yarn nx serve client`
 
 Go to `http://localhost:4200`
